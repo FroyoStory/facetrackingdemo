@@ -89,7 +89,7 @@ function drawLoop() {
   var positions = ctrack.getCurrentPosition();
   
   if (positions) {
-    var withForehead = forehead.add(positions, 5);
+    var withForehead = forehead.add(positions, 8);
     var triangles = Delaunay.triangulate(withForehead);
     
     for(var i = triangles.length; i;) {
